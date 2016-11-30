@@ -39,7 +39,14 @@
 		
 	      </section>
 
-	      <section data-background='img/Edimburgo.jpg'  alt='monolito y nubes'>
+	      <section data-background='img/Edimburgo.jpg'
+	      alt='monolito y nubes'>
+		<aside class='notes'>Como en <a
+	      href='http://www.slideshare.net/jjmerelo/clipboards/data-cloud'>esta
+		  transparencia</a>, lo esencial es la separación
+	      entre datos y cmputación y el uso de contenedores y
+	      máquinas virtuales, en vez de usar "bare metal" o
+		  clusters/grid</aside>
 	      </section>
 
 	      <section data-background='img/Oporto.jpg' alt='Nubes
@@ -51,7 +58,7 @@
 		  nube. Hablar de Hadoop o de OpenStack es perder
 		  totalmente de vista el objetivo: crear arquitecturas que
 		  se adapten a este ambiente multi-propietario,
-		  auto-escalable, efímero y heterogéneo</aside>
+		  auto-escalable, efímero y heterogéneo.  </aside>
 	      </section>
 	      
 	      <section data-background='img/cluster.jpg'
@@ -80,13 +87,24 @@
 	      la nube. Y que hay que ir aprendiendo: Kappa, Kafka, y
 	      cosas como Apache Samza o Flink o cosas por el
 	      estilo. Nuevas formas de computación, nuevas formas de
-		  procesamiento de datos, traídas por la nube</aside>
+		  procesamiento de datos, traídas por la nube,
+		  incluyendo <em>big data</em>em> o <em>data as a
+	      service</em>, plataformas que ofrecen integración de
+	      datos de diferentes fuentes, incluyendo datos
+	      abiertos. Por ejemplo, sería interesante integrar los
+		  <a href='http://opendata.ugr.es'>datos de la
+	      UGR</a>, con los de otras universidades para ver
+	      tendencias en investigación o en matriculación en la
+	      universidad y ofrecerlo como servicio. </aside>
 	      </section>
 
 	      <!-- Credits -->
 	      <section><h2>Créditos</h2>
 		<ul class='credits'>
-		  <li>Monolito de <a href='https://www.flickr.com/photos/7363531@N05/432422744/'>7263255</a></li>
+		  <li>Monolito de <a
+	      href='https://www.flickr.com/photos/7363531@N05/432422744/'>7263255</a></li>
+		  <li>Troncos nevados por <a
+		    href='https://www.flickr.com/photos/ruthanddave/424839429/'>Ruth Hartnup</a></li>
 		  <li>Resto de las fotos, mías, licencia CC-by-SA.</li>
 		</ul>
 	      </section>
@@ -94,20 +112,20 @@
 	    </div>
 	  </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-			  history: true,
-			  width: '90%',
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
+	  <script src="lib/js/head.min.js"></script>
+	  <script src="js/reveal.js"></script>
+	  
+	  <script>
+	   // More info https://github.com/hakimel/reveal.js#configuration
+	   Reveal.initialize({
+	     history: true,
+	     width: '90%',
+	     // More info https://github.com/hakimel/reveal.js#dependencies
+	     dependencies: [
+	       { src: 'plugin/notes/notes.js', async: true },
+	       { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	     ]
+	   });
+	  </script>
 	</body>
 </html>
